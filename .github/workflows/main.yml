@@ -22,7 +22,7 @@ jobs:
     needs: [Build]
     steps:
       - name: Download code
-        run: actions/download-artifact@v4
+        uses: actions/download-artifact@v4
       - name: Run linting
         run: super-linter/super-linter/slim@v7
         env:
