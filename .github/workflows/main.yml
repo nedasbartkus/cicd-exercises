@@ -2,7 +2,7 @@ name: Main workflow
 on: push
 env:
   github_username: ${{ github.actor }}
-  github_password: ${{ secrets.GITHUB_TOKEN }}>
+  github_password: ${{ secrets.GITHUB_TOKEN }}
   GIT_COMMIT: ${{ github.sha }}
 jobs:
   Build:
